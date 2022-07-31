@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Poppins:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Global variables */
+
+:root {
+    --bg-light: #fff;
+    --bg-dark: #292C35;
+    --bg-color: var(--bg-dark);
+    --bg-gradient: 
+        hsl(192deg 95% 68%) 0%,
+        hsl(187deg 89% 62%) 4%,
+        hsl(182deg 80% 56%) 8%,
+        hsl(175deg 78% 56%) 12%,
+        hsl(167deg 78% 60%) 18%,
+        hsl(155deg 76% 66%) 24%,
+        hsl(135deg 72% 71%) 31%,
+        hsl(106deg 69% 72%) 41%,
+        hsl(84deg 70% 67%) 52%,
+        hsl(66deg 69% 62%) 69%,
+        hsl(52deg 84% 63%) 100%;
+    --text-color-title: #fff;
+    --text-color-normal: #c5c5c5;
+    --font-title: 'Montserrat', sans-serif;
+    --font-text: 'Poppins', sans-serif;
+    --gray-color: #454545;
+}
+
+/* Animaciones */
+@keyframes iconAnimation {
+  0% { 
+    transform: translateY(0) rotate(0);
+    opacity: 0.2
+  }
+  50% { opacity: 0.7}
+  100% { 
+    transform: translateY(-200px) rotate(45deg);
+    opacity: 0.2
+  }
+}
+
+.animate-icon {
+  animation: iconAnimation 3s ease-in-out;
+}
+
