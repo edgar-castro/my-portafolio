@@ -30,6 +30,10 @@
     --gray-color: #454545;
 }
 
+#app {
+  overflow-x: hidden;
+}
+
 /* Animaciones */
 @keyframes iconAnimation {
   0% { 

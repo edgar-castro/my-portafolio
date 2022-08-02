@@ -52,7 +52,8 @@ onMount(() => {
 
 <style>
 .animatedbg {
-    width: 100vw;
+    /* width: 100vw; */
+    widows: 100%;
     height: 100vh;
     background-image: linear-gradient(
         0deg,
@@ -66,7 +67,6 @@ onMount(() => {
 }
 
 .animatedbg .animatedbg__icons {
-    /* position: relative; */
     width: 100%;
     height: 100%;
     position: absolute;
