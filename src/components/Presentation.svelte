@@ -1,8 +1,12 @@
+<script>
+import { t } from '../services/translations';
+</script>
+
 <div class="title">
     <img class="profile_pic" src="/images/profile.jpg" alt="Foto de perfil">
     <div class="text_container">
-        <h1>Hi! I'm Edgar Castro</h1>
-        <h3>Frontend Developer</h3>
+        <h1>{$t('home.wellcome')}</h1>
+        <h3>{$t('home.role')}</h3>
     </div>
 </div>
 
