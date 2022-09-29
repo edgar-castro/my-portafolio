@@ -1,15 +1,18 @@
 <script>
 import AnimatedBackground from "./AnimatedBackground.svelte";
 import Presentation from "./Presentation.svelte";
+// import LangSelector from './LangSelector.svelte';
 
-import { currentScrollY } from "../stores/config";
+import { scrollY } from "../utils/stores";
+    // import LangSelector from "./LangSelector.svelte";
 const w = window.innerWidth * 0.6;
 console.log(w);
 </script>
 
-<div class="fixed" style="display: { $currentScrollY > w ? 'none' : 'block'};">
+<div class="" style="display: { $scrollY > w ? 'none' : 'block'};">
     <AnimatedBackground>
         <Presentation/>
+        <!-- <LangSelector /> -->
     </AnimatedBackground>  
 </div>
     

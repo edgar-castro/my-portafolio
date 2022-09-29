@@ -4,7 +4,7 @@ export const translations = {
         'navbar.home': 'Home',
         'navbar.about': 'About me',
         'navbar.portfolio': 'Portfolio',
-        'navbar.contact': 'Contacto',
+        'navbar.contact': 'Contact',
         // Home
         'home.wellcome': `Hi! I'm Edgar`,
         'home.role': 'Frontend developer',
@@ -28,6 +28,12 @@ I have been designing and developing web pages and web applications, and some mo
         'portfolio.project2.description': 'A simple simulator that show diferent algorithms of page replacement in O.S',
     },
     'es': {
+        // Navbar
+        'navbar.home': 'Inicio',
+        'navbar.about': 'Sobre mi',
+        'navbar.portfolio': 'Portafolio',
+        'navbar.contact': 'Contacto',
+        // Home
         'home.wellcome': `¡Hola! Soy Edgar`,
         'home.role': 'Desarrollador Frontend',
     }

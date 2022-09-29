@@ -2,7 +2,7 @@
 import { writable, derived} from "svelte/store";
 import { translations } from "../assets/localdata";
 
-export const lang = writable('en');
+export const lang = writable('es');
 
 export const translate = (lang, key, variable) => {
 

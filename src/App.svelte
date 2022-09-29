@@ -2,27 +2,18 @@
 import About from "./components/About.svelte";
 import Home from "./components/Home.svelte";
 import Navbar from "./components/Navbar.svelte";
-import ScrollView from "./components/ScrollView.svelte";
-import TransparentPage from "./components/TransparentPage.svelte";
 
-import { currentScrollY } from "./stores/config";
+import { scrollY, theme} from "./utils/stores";
 
 </script>
- <svelte:window bind:scrollY={$currentScrollY} />
-<main>
- 
+ <svelte:window bind:scrollY={$scrollY} />
+<main class:dark={$theme}>
   <Navbar />
   <Home />
+  <About />
   <div class="contact">
-    Contact
+  Contact
   </div>
-  <ScrollView>
-    <TransparentPage />
-    <About />
-    <p>{$currentScrollY}</p>
-    <TransparentPage />
-  </ScrollView>
- 
 
 </main>
 

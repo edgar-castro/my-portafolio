@@ -51,6 +51,7 @@ onMount(() => {
 </div>
 
 <style>
+
 .animatedbg {
     /* width: 100vw; */
     widows: 100%;

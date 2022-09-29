@@ -16,13 +16,15 @@
 <style>
 .about {
     width: 100vw;
-    height: 100vh;
+    height: 200vh;
+    /* margin: 100vh 0; */
     background-color: var(--bg-color);
     position: relative;
     display: flex;
     justify-content: start;
     align-items: center;
     flex-direction: column;
+    transition: all 200ms ease-in;
     /* overflow-x: hidden; */
 }
 
@@ -33,6 +35,7 @@
     left: 0;
     transform: translate(0, -99%);
     fill: var(--bg-color);
+    transition: all 200ms ease-in;
 }
 
 .about .extra {

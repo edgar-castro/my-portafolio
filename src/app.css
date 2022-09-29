@@ -10,7 +10,8 @@
 :root {
     --bg-light: #fff;
     --bg-dark: #292C35;
-    --bg-color: var(--bg-dark);
+    --bg-color: var(--bg-light);
+    --fg-color: var(--bg-dark);
     --bg-gradient: 
         hsl(192deg 95% 68%) 0%,
         hsl(187deg 89% 62%) 4%,
@@ -23,11 +24,20 @@
         hsl(84deg 70% 67%) 52%,
         hsl(66deg 69% 62%) 69%,
         hsl(52deg 84% 63%) 100%;
-    --text-color-title: #fff;
+    --text-color-title: black;
     --text-color-normal: #c5c5c5;
     --font-title: 'Montserrat', sans-serif;
     --font-text: 'Poppins', sans-serif;
-    --gray-color: #454545;
+    --gray: #454545;
+    --light-gray: #ddd;
+    --details-color: var(--gray);
+}
+
+.dark {
+  --bg-color: var(--bg-dark);
+  --fg-color: var(--bg-light);
+  --details-color: var(--light-gray);
+  --text-color-title: white;
 }
 
 #app {
