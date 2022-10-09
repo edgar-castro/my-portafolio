@@ -3,6 +3,7 @@ import LangSelector from './LangSelector.svelte';
 import ThemeToggle from './ThemeToggle.svelte';
 
 import { lang, t } from '../utils/translations'
+    import Icon from './Icon.svelte';
 
 let opened = false;
 
@@ -22,7 +23,10 @@ function handleMenuBtn() {
             <LangSelector />
         </div>
         <ul class="links">
-            <li class="active">{$t('navbar.home')}</li>
+            <li class="active">
+                <!-- <Icon type="home" --color="currentColor" --size={opene/> -->
+                {$t('navbar.home')}
+            </li>
             <li>{$t('navbar.about')}</li>
             <li>{$t('navbar.portfolio')}</li>
             <li>{$t('navbar.contact')}</li>
@@ -47,7 +51,9 @@ nav {
 
     & .nav-btn {
         display: none;
-        position: relative;
+        position: absolute;
+        top: 1em;
+        left: 1em;
         width: 24px;
         height: 24px;
 
@@ -95,6 +101,7 @@ nav {
             list-style: none;
             
             & li {
+                display: flex;
                 margin: 0 0.25em;
                 padding: 0.5em;
                 font-family: var(--font-title);
@@ -141,7 +148,7 @@ nav {
             /* position: relative; */
 
             &.opened { 
-                height: calc(100vh - 50px);
+                height: calc(100vh);
                 background: rgba(255, 255, 255, 0.2);
                 box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
                 backdrop-filter: blur(2.5px);

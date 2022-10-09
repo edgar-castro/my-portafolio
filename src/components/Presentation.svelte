@@ -9,12 +9,6 @@ import { t } from '../utils/translations';
         <h1>{$t('home.wellcome')}</h1>
         <h3>{$t('home.role')}</h3>
     </div>
-    <!-- <select>
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-    </select> -->
-    <!-- <LangSelector/> -->
 </div>
 
 <style>
