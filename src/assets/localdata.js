@@ -8,12 +8,11 @@ export const translations = {
         // Home
         'home.wellcome': `Hi! I'm Edgar`,
         'home.role': 'Frontend developer',
+        'home.scrollToStart': 'Scroll to start',
         // About
         'about.title': 'About',
         'about.subtitle': 'Who <span class="">I am?</span>',
-        'about.text': `I’m a frontend developer, who likes the most of 
-technologies to build and develop graphic interfaces, but also opened to other technologies and roles.
-I have been designing and developing web pages and web applications, and some mobile applications too.`,
+        'about.text': `I’m a frontend developer, who likes the most of technologies to build and develop graphic interfaces, but also opened to other technologies and roles. I have been designing and developing web pages and web applications, and some mobile applications too.`,
         'about.more': 'Do you want know <span class="">more</span>?',
         'about.download': 'Download my CV',
         'about.contact': 'Contact me',

@@ -44,6 +44,19 @@
   overflow-x: hidden;
 }
 
+.icon-to-animate {
+  opacity: 0;
+  position: absolute;
+  width: 10rem;
+  height: 10rem;
+}
+
+.animate-icon {
+  animation: iconAnimation 3s ease-in-out;
+}
+
+
+
 /* Animaciones */
 @keyframes iconAnimation {
   0% { 
@@ -57,7 +70,6 @@
   }
 }
 
-.animate-icon {
-  animation: iconAnimation 3s ease-in-out;
-}
+
+
 

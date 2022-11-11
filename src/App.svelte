@@ -1,9 +1,8 @@
 <script>
-// import About from "./components/About.svelte";
-// import Home from "./components/Home.svelte";
 import Navbar from "./components/Navbar.svelte";
 
 import Home from './views/Home.svelte'
+import About from './views/About.svelte'
 
 import { scrollY, theme} from "./utils/stores";
 
@@ -12,31 +11,16 @@ import { scrollY, theme} from "./utils/stores";
 <main class:dark={$theme}>
   <Navbar />
   <Home />
-  <!-- <Home />
   <About />
-  <div class="contact">
-  Contact
-  </div> -->
 
 </main>
 
 <style>
 main{
   width: 100vw;
-  /* height: 100vh; */
-  /* min-height: 100vh; */
   position: relative;
   overflow-y: auto;
 }
 
-/* .contact {
-  width: 100vw;
-  height: 100vh;
-  background-image: linear-gradient(
-    180deg,
-    var(--bg-gradient)
-  );
-  position: fixed;
-  z-index: 9;
-} */
+
 </style>

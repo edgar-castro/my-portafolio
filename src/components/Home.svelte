@@ -6,7 +6,7 @@ import Presentation from "./Presentation.svelte";
 import { scrollY } from "../utils/stores";
     // import LangSelector from "./LangSelector.svelte";
 const w = window.innerWidth * 0.6;
-console.log(w);
+
 </script>
 
 <div class="" style="display: { $scrollY > w ? 'none' : 'block'};">

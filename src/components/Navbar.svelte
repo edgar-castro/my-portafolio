@@ -2,13 +2,26 @@
 import LangSelector from './LangSelector.svelte';
 import ThemeToggle from './ThemeToggle.svelte';
 
+import { gsap } from 'gsap'
+import ScrollTo from 'gsap/ScrollToPlugin';
+
 import { lang, t } from '../utils/translations'
     import Icon from './Icon.svelte';
+    import { onMount } from 'svelte';
 
 let opened = false;
 
 function handleMenuBtn() {
     opened = !opened;
+}
+
+onMount(() => {
+    gsap.registerPlugin(ScrollTo);
+})
+
+function scrollTo(id){
+    console.log('To', id)
+    gsap.to(window, { duration: .5, scrollTo: {x: 0, y: id}})
 }
 
 </script>
@@ -24,10 +37,9 @@ function handleMenuBtn() {
         </div>
         <ul class="links">
             <li class="active">
-                <!-- <Icon type="home" --color="currentColor" --size={opene/> -->
                 {$t('navbar.home')}
             </li>
-            <li>{$t('navbar.about')}</li>
+            <li on:click={() => { scrollTo('#about') }}>{$t('navbar.about')}</li>
             <li>{$t('navbar.portfolio')}</li>
             <li>{$t('navbar.contact')}</li>
         </ul>
